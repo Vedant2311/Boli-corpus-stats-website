@@ -1,0 +1,275 @@
+{
+    "as-bn": {
+        "total": 146615
+    },
+    "as-en": {
+        "total": 106646
+    },
+    "as-gu": {
+        "total": 153881
+    },
+    "as-hi": {
+        "total": 120307
+    },
+    "as-kn": {
+        "total": 111426
+    },
+    "as-ml": {
+        "total": 117116
+    },
+    "as-mni": {
+        "total": 32499
+    },
+    "as-mr": {
+        "total": 98632
+    },
+    "as-or": {
+        "total": 50790
+    },
+    "as-pa": {
+        "total": 150012
+    },
+    "as-ta": {
+        "total": 105843
+    },
+    "as-te": {
+        "total": 93931
+    },
+    "as-ur": {
+        "total": 81694
+    },
+    "bn-en": {
+        "total": 1705327
+    },
+    "bn-gu": {
+        "total": 413159
+    },
+    "bn-hi": {
+        "total": 534383
+    },
+    "bn-kn": {
+        "total": 363777
+    },
+    "bn-ml": {
+        "total": 505611
+    },
+    "bn-mni": {
+        "total": 35209
+    },
+    "bn-mr": {
+        "total": 389284
+    },
+    "bn-or": {
+        "total": 127030
+    },
+    "bn-pa": {
+        "total": 439395
+    },
+    "bn-ta": {
+        "total": 464974
+    },
+    "bn-te": {
+        "total": 296475
+    },
+    "bn-ur": {
+        "total": 426716
+    },
+    "en-gu": {
+        "total": 517355
+    },
+    "en-hi": {
+        "total": 2796380
+    },
+    "en-kn": {
+        "total": 275537
+    },
+    "en-ml": {
+        "total": 1371908
+    },
+    "en-mni": {
+        "total": 7419
+    },
+    "en-mr": {
+        "total": 518902
+    },
+    "en-or": {
+        "total": 183481
+    },
+    "en-pa": {
+        "total": 522351
+    },
+    "en-ta": {
+        "total": 1194550
+    },
+    "en-te": {
+        "total": 426202
+    },
+    "en-ur": {
+        "total": 1331222
+    },
+    "gu-hi": {
+        "total": 470100
+    },
+    "gu-kn": {
+        "total": 356324
+    },
+    "gu-ml": {
+        "total": 399576
+    },
+    "gu-mni": {
+        "total": 37142
+    },
+    "gu-mr": {
+        "total": 368859
+    },
+    "gu-or": {
+        "total": 136295
+    },
+    "gu-pa": {
+        "total": 412176
+    },
+    "gu-ta": {
+        "total": 401268
+    },
+    "gu-te": {
+        "total": 277076
+    },
+    "gu-ur": {
+        "total": 345724
+    },
+    "hi-kn": {
+        "total": 385995
+    },
+    "hi-ml": {
+        "total": 490152
+    },
+    "hi-mni": {
+        "total": 36091
+    },
+    "hi-mr": {
+        "total": 465326
+    },
+    "hi-or": {
+        "total": 164384
+    },
+    "hi-pa": {
+        "total": 589486
+    },
+    "hi-ta": {
+        "total": 733504
+    },
+    "hi-te": {
+        "total": 333185
+    },
+    "hi-ur": {
+        "total": 529544
+    },
+    "kn-ml": {
+        "total": 381003
+    },
+    "kn-mni": {
+        "total": 32369
+    },
+    "kn-mr": {
+        "total": 358722
+    },
+    "kn-or": {
+        "total": 80419
+    },
+    "kn-pa": {
+        "total": 363470
+    },
+    "kn-ta": {
+        "total": 390301
+    },
+    "kn-te": {
+        "total": 270951
+    },
+    "kn-ur": {
+        "total": 275584
+    },
+    "ml-mni": {
+        "total": 34857
+    },
+    "ml-mr": {
+        "total": 373990
+    },
+    "ml-or": {
+        "total": 109433
+    },
+    "ml-pa": {
+        "total": 440264
+    },
+    "ml-ta": {
+        "total": 510013
+    },
+    "ml-te": {
+        "total": 281391
+    },
+    "ml-ur": {
+        "total": 421805
+    },
+    "mni-mr": {
+        "total": 33458
+    },
+    "mni-or": {
+        "total": 37164
+    },
+    "mni-pa": {
+        "total": 36170
+    },
+    "mni-ta": {
+        "total": 34208
+    },
+    "mni-te": {
+        "total": 32378
+    },
+    "mni-ur": {
+        "total": 34060
+    },
+    "mr-or": {
+        "total": 128481
+    },
+    "mr-pa": {
+        "total": 398016
+    },
+    "mr-ta": {
+        "total": 410776
+    },
+    "mr-te": {
+        "total": 271864
+    },
+    "mr-ur": {
+        "total": 318122
+    },
+    "or-pa": {
+        "total": 143676
+    },
+    "or-ta": {
+        "total": 125243
+    },
+    "or-te": {
+        "total": 89884
+    },
+    "or-ur": {
+        "total": 117141
+    },
+    "pa-ta": {
+        "total": 513293
+    },
+    "pa-te": {
+        "total": 298893
+    },
+    "pa-ur": {
+        "total": 356126
+    },
+    "ta-te": {
+        "total": 333760
+    },
+    "ta-ur": {
+        "total": 388447
+    },
+    "te-ur": {
+        "total": 218589
+    }
+}
