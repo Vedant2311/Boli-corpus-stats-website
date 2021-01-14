@@ -2,5 +2,73 @@
 {% block body %}
 <div>
     <h2>Stats</h2>
+    <!-- <input type="checkbox" name="million" value="m"> Million<br>
+    <input type="checkbox" name="thousand" value="k"> Thousand<br>
+    <input type="checkbox" class="css-checkbox" onClick="checkAllToggle(this,event)"/> Million -->
+    <div class="stats">
+        <table style="width:100%"> 
+            <thead>
+                <tr> 
+                    <th> Lang Codes </th>
+                    {% for i,language_c in enumerate_stats_langs %}
+                    <th><a href="#" data-toggle="tooltip" title="{{language_c['language']}}">{{ language_c['code']}}</a></th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for i,language_r in enumerate_stats_langs %}
+                
+                <tr>
+                    <td><a href="#" data-toggle="tooltip" title="{{language_r['language']}}">{{ language_r['code']}}</a></td> 
+                    {% for j,language_c in enumerate_stats_langs %}
+                        {% if j > i %}
+                        <td>{{ "%.3f"| format((stats['merge_stats'][language_r['code'] + '-' + language_c['code']]['total'] | float)/1000000) }} </td>
+                        {% else %}  
+                        <td> - </td>
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+           
+
+        </table>
+
+    </div>
 </div>
+{% endblock %}
+
+{% block script %}
+<script type="text/javascript">
+    $('#modal-form').submit(function(e) {
+    e.preventDefault();
+    var $inputs = $('#modal-form :input');
+
+    var values = {};
+    $inputs.each(function() {
+        values[this.name] = $(this).val();
+    });
+
+    var comment = values.comment;
+    var id = selectedIds;
+    
+    $.ajax({
+        url: "/resolve",
+        type: "POST",
+        dataType: "json",
+        traditional: true,
+        data: {
+            'ids': selectedIds,
+            'comment' : comment
+        },
+        success: function(resp){
+            renderAlerts(resp.data,resp.stats);
+        }
+    });
+
+    $('#modalWindow').modal('toggle'); 
+
+    clearModal();
+});
+</script>
 {% endblock %}

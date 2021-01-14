@@ -1,6 +1,6 @@
 {
     "as-bn": {
-        "total": 146615
+        "total": 146590
     },
     "as-en": {
         "total": 106646
@@ -9,7 +9,7 @@
         "total": 153881
     },
     "as-hi": {
-        "total": 120307
+        "total": 120306
     },
     "as-kn": {
         "total": 111426
@@ -39,13 +39,13 @@
         "total": 81694
     },
     "bn-en": {
-        "total": 1705327
+        "total": 1705279
     },
     "bn-gu": {
-        "total": 413159
+        "total": 413158
     },
     "bn-hi": {
-        "total": 534383
+        "total": 534382
     },
     "bn-kn": {
         "total": 363777
@@ -57,7 +57,7 @@
         "total": 35209
     },
     "bn-mr": {
-        "total": 389284
+        "total": 389283
     },
     "bn-or": {
         "total": 127030
@@ -75,46 +75,46 @@
         "total": 426716
     },
     "en-gu": {
-        "total": 517355
+        "total": 517286
     },
     "en-hi": {
-        "total": 2796380
+        "total": 2709828
     },
     "en-kn": {
-        "total": 275537
+        "total": 275535
     },
     "en-ml": {
-        "total": 1371908
+        "total": 1371890
     },
     "en-mni": {
         "total": 7419
     },
     "en-mr": {
-        "total": 518902
+        "total": 518886
     },
     "en-or": {
-        "total": 183481
+        "total": 183448
     },
     "en-pa": {
-        "total": 522351
+        "total": 522310
     },
     "en-ta": {
-        "total": 1194550
+        "total": 1193812
     },
     "en-te": {
-        "total": 426202
+        "total": 426189
     },
     "en-ur": {
-        "total": 1331222
+        "total": 1331186
     },
     "gu-hi": {
-        "total": 470100
+        "total": 470098
     },
     "gu-kn": {
         "total": 356324
     },
     "gu-ml": {
-        "total": 399576
+        "total": 399575
     },
     "gu-mni": {
         "total": 37142
@@ -129,10 +129,10 @@
         "total": 412176
     },
     "gu-ta": {
-        "total": 401268
+        "total": 401267
     },
     "gu-te": {
-        "total": 277076
+        "total": 277075
     },
     "gu-ur": {
         "total": 345724
@@ -141,25 +141,25 @@
         "total": 385995
     },
     "hi-ml": {
-        "total": 490152
+        "total": 490151
     },
     "hi-mni": {
         "total": 36091
     },
     "hi-mr": {
-        "total": 465326
+        "total": 460312
     },
     "hi-or": {
         "total": 164384
     },
     "hi-pa": {
-        "total": 589486
+        "total": 589485
     },
     "hi-ta": {
-        "total": 733504
+        "total": 733497
     },
     "hi-te": {
-        "total": 333185
+        "total": 333183
     },
     "hi-ur": {
         "total": 529544
@@ -237,7 +237,7 @@
         "total": 410776
     },
     "mr-te": {
-        "total": 271864
+        "total": 271863
     },
     "mr-ur": {
         "total": 318122
@@ -264,7 +264,7 @@
         "total": 356126
     },
     "ta-te": {
-        "total": 333760
+        "total": 333759
     },
     "ta-ur": {
         "total": 388447
