@@ -17,3 +17,7 @@ background-color: #f0f0f0;
 .form input{
     float: left;
 }
+
+td.high {
+    background: #8ac57e;
+}

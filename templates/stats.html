@@ -18,11 +18,15 @@
             <tbody>
                 {% for i,language_r in enumerate_stats_langs %}
                 
-                <tr>
+                <tr id="{{language_r['code']}}">
                     <td><a href="#" data-toggle="tooltip" title="{{language_r['language']}}">{{ language_r['code']}}</a></td> 
                     {% for j,language_c in enumerate_stats_langs %}
                         {% if j > i %}
-                        <td>{{ "%.3f"| format((stats['merge_stats'][language_r['code'] + '-' + language_c['code']]['total'] | float)/1000000) }} </td>
+                            {% if ((stats['merge_stats'][language_r['code'] + '-' + language_c['code']]['total'] | float)/1000000) > 1 %}
+                                <td id="{{language_c['code']}}" class = 'high'>{{ "%.3f"| format((stats['merge_stats'][language_r['code'] + '-' + language_c['code']]['total'] | float)/1000000) }} </td>
+                            {% else %}
+                                <td id="{{language_c['code']}}">{{ "%.3f"| format((stats['merge_stats'][language_r['code'] + '-' + language_c['code']]['total'] | float)/1000000) }} </td>
+                            {% endif %}
                         {% else %}  
                         <td> - </td>
                         {% endif %}
