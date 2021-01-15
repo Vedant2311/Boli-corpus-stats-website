@@ -64,5 +64,10 @@ def catalogue():
 def about():
     return render_template('about.html')
 
+@app.route('/references')
+def references():
+    return render_template('references.html')
+
+
 if __name__ == '__main__':
     app.run()
