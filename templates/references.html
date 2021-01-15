@@ -1,0 +1,34 @@
+
+{% extends "base.html" %}
+{% block body %}
+<div>
+    <h3>References</h3>
+
+Datasets Used:
+
+OPUS: Collection of translated texts from the web. Sources like JW300, GNOME, and Ubuntu are present here.
+Opus-100: English-Centric multilingual corpus including 100 languages. No preprocessing was needed here.
+JW300: Corpus for 300 languages based on religious texts. Good quality. Preprocessing needed.
+OpenSubtitles: Corresponds to translations for movie subtitles. Small sentences but good vocabulary. Preprocessing done. After the threshold preprocessing, the size got very less (used the value of 0.6 here). So the threshold values won't be used here.
+Wikimatrix: Corresponds to the parallel corpora mined from Wikimedia by Facebook research. Not many Indian language pairs are present in it though.The data aligned with English is comparable in size to JW300. But for other inter-indic pairs, the amount of data is very less
+KDE4: Parallel corpus of the KDE4 localization files. Contains decent amount of text in some Indic language pairs. 
+Tanzil: Another corpus based on religious text. This one being specific to Quran translations. A lot of data between Hi, Ur, En.
+TED2020: Crawl of 4000+ TED and TED-X transcripts from july2020. En based sentences were more
+Corpora based on texts related to PM Modi:
+CVIT PIB and MKB: Corresponds to Mann Ki Baat radio translations and similar texts extracted from the Press Information Bureau sites. No preprocessing needed
+PMIndia corpus: Parallel corpus in 13 Indian languages corresponding to PMI's news updates. Different from the CVIT corpora
+The IndoWordNet parallel corpus: Consists of decent amount of parallel sentences across many Indian languages in our domain. In many cases, the example and gloss sentences are translations and thus this can be used as a dataset. Used in Hi-mr dataset in EMNLP'20 (check the below section)
+
+Miscellaneous datasets:
+WikiTitles en-ta and en-gu: Downloaded from the data.statmt.org website.
+IITB En-Hi corpus: Downloaded and extracted this in Scratch, HPC
+Asian Language Treebank: Has 20K sentences translated corresponding to Hi, En, Bn through wikinews
+UFAL en-ta v2: 160K train sentences between en-ta. Domains include Bible, cinema, and news 
+Parallel Corpora on Mechanical Turk: Consists of datasets for six Indian languages against English. Annotated via crowdsourcing
+EMNLP'20 Hi-Mr: Downloaded the train, dev, and test from the site. The password is Slt@Wmt. Also added train text corresponding to PMI here so that we can use it for results produced by Lovish later. 
+OdiEn corp v2: Parallel corpus obtained between Or and En. Different ways incorporated to get the data, including using OCR based techniques + human correction.
+En-Ur Corpus Charles University: Obtained from Religious texts
+
+
+</div>
+{% endblock %}
