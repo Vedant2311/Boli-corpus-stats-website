@@ -7,7 +7,7 @@ app.secret_key = b'bharat mata ki jay'
 
 data_stats = {}
 
-for stats_t in ['base_stats','clean_stats','merge_stats','languages']:
+for stats_t in ['base_stats','clean_stats','merge_stats','languages','references']:
     with open('./stats/' + stats_t + '.json') as f:
         data_stats[stats_t] = json.load(f)
 
@@ -66,7 +66,7 @@ def about():
 
 @app.route('/references')
 def references():
-    return render_template('references.html')
+    return render_template('references.html',references=data_stats['references'])
 
 
 if __name__ == '__main__':

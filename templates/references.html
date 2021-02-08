@@ -4,7 +4,15 @@
 <div>
     <h3>References</h3>
 
-<h4> Datasets Used: </h4>
+<ul>
+    {% for key in references.keys() %}
+    <li>
+        {{references[key]['name']}}
+    </li>
+    {% endfor %}
+</ul>
+    
+<!-- <h4> Datasets Used: </h4>
 
 <b>OPUS:</b> Collection of translated texts from the web. Sources like JW300, GNOME, and Ubuntu are present here. <br>
 <b>Opus-100:</b> English-Centric multilingual corpus including 100 languages. No preprocessing was needed here. <br>
@@ -26,7 +34,7 @@
 <b>Parallel Corpora on Mechanical Turk:</b> Consists of datasets for six Indian languages against English. Annotated via crowdsourcing<br>
 <b>EMNLP'20 Hi-Mr:</b> Downloaded the train, dev, and test from the site. The password is Slt@Wmt. Also added train text corresponding to PMI here so that we can use it for results produced by Lovish later. <br>
 <b>OdiEn corp v2:</b>Parallel corpus obtained between Or and En. Different ways incorporated to get the data, including using OCR based techniques + human correction.<br>
-<b>En-Ur Corpus Charles University:</b> Obtained from Religious texts
+<b>En-Ur Corpus Charles University:</b> Obtained from Religious texts -->
 
 
 </div>
