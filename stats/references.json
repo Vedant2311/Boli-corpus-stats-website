@@ -57,21 +57,21 @@
     },
     "ted2020":{
         "type": "source",
-        "name":"",
-        "MLA":"",
-        "paper_link":""
+        "name":"Making monolingual sentence embeddings multilingual using knowledge distillation",
+        "MLA":"Reimers, Nils, and Iryna Gurevych. \\\"Making monolingual sentence embeddings multilingual using knowledge distillation.\\\" arXiv preprint arXiv:2004.09813 (2020).",
+        "paper_link":"https://arxiv.org/abs/2004.09813"
     },
     "subtitles":{
-        "type": "source",
-        "name":"",
-        "MLA":"",
-        "paper_link":""
+        "type": "paper",
+        "name":"OpenSubtitles2016: Extracting Large Parallel Corpora from Movie and TV Subtitles",
+        "MLA":"Lison, Pierre, and Jörg Tiedemann. \\\"Opensubtitles2016: Extracting large parallel corpora from movie and tv subtitles.\\\" (2016): 923-929.",
+        "paper_link":"https://www.duo.uio.no/handle/10852/50459"
     },
     "wikimatrix":{
-        "type": "source",
-        "name":"",
-        "MLA":"",
-        "paper_link":""
+        "type": "paper",
+        "name":"Wikimatrix: Mining 135m parallel sentences in 1620 language pairs from wikipedia",
+        "MLA":"Schwenk, Holger, et al. \\\"Wikimatrix: Mining 135m parallel sentences in 1620 language pairs from wikipedia.\\\" arXiv preprint arXiv:1907.05791 (2019).",
+        "paper_link":"https://arxiv.org/abs/1907.05791"
     },
     "tanzil":{
         "type": "source",
@@ -83,10 +83,10 @@
         "info": "This is a collection of Quran translations compiled by the Tanzil project."
     },
     "pib-v1.3":{
-        "type": "source",
-        "name":"",
-        "MLA":"",
-        "paper_link":""
+        "type": "paper",
+        "name":"A Multilingual Parallel Corpora Collection Effort for Indian Languages",
+        "MLA":"Siripragada, Shashank, et al. \\\"A multilingual parallel corpora collection effort for Indian languages.\\\" arXiv preprint arXiv:2007.07691 (2020).",
+        "paper_link":"https://www.aclweb.org/anthology/2020.lrec-1.462/"
     },
     "mkb-v0":{
         "type": "source",
@@ -98,13 +98,14 @@
         "type": "source",
         "name":"",
         "MLA":"",
-        "paper_link":""
+        "paper_link":"",
+        "link":"https://www2.nict.go.jp/astrec-att/member/mutiyama/ALT/"
     },
     "wiki-turk":{
         "type": "source",
-        "name":"",
-        "MLA":"",
-        "paper_link":""
+        "name":"Constructing Parallel Corpora for Six Indian Languages via Crowdsourcing",
+        "MLA":"Post, Matt, Chris Callison-Burch, and Miles Osborne. \\\"Constructing parallel corpora for six indian languages via crowdsourcing.\\\" Proceedings of the Seventh Workshop on Statistical Machine Translation. 2012.",
+        "paper_link":"https://www.aclweb.org/anthology/W12-3152/"
     },
     "wikititles-temp":{
         "type": "source",
@@ -114,9 +115,9 @@
     },
     "iitb":{
         "type": "source",
-        "name":"",
-        "MLA":"",
-        "paper_link":""
+        "name":"The IIT Bombay English-Hindi Parallel Corpus",
+        "MLA":"Kunchukuttan, Anoop, Pratik Mehta, and Pushpak Bhattacharyya. \\\"The iit bombay english-hindi parallel corpus.\\\" arXiv preprint arXiv:1710.02855 (2017).",
+        "paper_link":"https://www.cfilt.iitb.ac.in/~parallelcorp/iitb_en_hi_parallel/lrec2018_iitbparallel.pdf"
     },
     "odi-en-v2.0":{
         "type": "paper",
@@ -132,9 +133,10 @@
     },
     "en-ur-charles":{
         "type": "source",
-        "name":"",
-        "MLA":"",
-        "paper_link":""
+        "name":"English-Urdu Religious Parallel Corpus",
+        "MLA":"Jawaid, Bushra and Zeman, Daniel, 2010, \n English-Urdu Religious Parallel Corpus, LINDAT/CLARIAH-CZ digital library at the Institute of Formal and Applied Linguistics (ÚFAL), Faculty of Mathematics and Physics, Charles University, \n http://hdl.handle.net/11234/1-2582.",
+        "paper_link":"",
+        "link":"https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-2582"
     },
     "wmt-hi-mr":{
         "type": "source",
@@ -149,15 +151,17 @@
         "paper_link":""
     },
     "ramayana-sans-iitk":{
-        "type": "source",
+        "type": "website",
         "name":"",
         "MLA":"",
-        "paper_link":""
+        "paper_link":"",
+        "link":"https://www.valmiki.iitk.ac.in/sloka"
     },
     "ramcharitmanas-sans":{
-        "type": "source",
+        "type": "website",
         "name":"",
         "MLA":"",
-        "paper_link":""
+        "paper_link":"",
+        "link": "https://hindi.webdunia.com/religion/religion/hindu/ramcharitmanas/"
     }
 }

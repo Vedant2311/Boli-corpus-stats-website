@@ -43,6 +43,10 @@
     "code": "pa"
 },
 {
+    "language": "Sanskrit",
+    "code": "sa"
+},
+{
     "language": "Tamil",
     "code": "ta"
 },
@@ -53,8 +57,4 @@
 {
     "language": "Urdu",
     "code": "ur"
-},
-{
-    "language": "Sanskrit",
-    "code": "sa"
 }]
