@@ -4,27 +4,34 @@
     <h2>Catalogue</h2>
     <div class="catalogue">
         <form action="{{url_for('catalogue')}}" method="post">
-            <label for="langs">1st language:</label>
-            <select name="language1" id="lang1">
-                {% for i,language in enumerate_stats_langs %}
-                    {% if lang1 == language['code'] %}
-                        <option value="{{language['code']}}" selected="selected">{{language['language'] + '(' + language['code'] + ')'}}</option>
-                    {% else %}
-                        <option value="{{language['code']}}">{{language['language'] + '(' + language['code'] + ')'}}</option>
-                    {% endif %}
-                {% endfor %}
-            </select>
-            <label for="langs">2nd language:</label>
-            <select name="language2" id="lang2">
-                {% for i,language in enumerate_stats_langs %}
-                    {% if lang2 == language['code'] %}
-                        <option value="{{language['code']}}" selected="selected">{{language['language'] + '(' + language['code'] + ')'}}</option>
-                    {% else %}
-                        <option value="{{language['code']}}">{{language['language'] + '(' + language['code'] + ')'}}</option>
-                    {% endif %}
-                {% endfor %}
-            </select>
-            <input type="submit" value="Submit">
+            <div class="row">
+              <div class="col">
+                <select class="form-control" name="language1" id="lang1">
+                    {% for i,language in enumerate_stats_langs %}
+                        {% if lang1 == language['code'] %}
+                            <option value="{{language['code']}}" selected="selected">{{language['language'] + '(' + language['code'] + ')'}}</option>
+                        {% else %}
+                            <option value="{{language['code']}}">{{language['language'] + '(' + language['code'] + ')'}}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control" name="language2" id="lang2">
+                    {% for i,language in enumerate_stats_langs %}
+                        {% if lang2 == language['code'] %}
+                            <option value="{{language['code']}}" selected="selected">{{language['language'] + '(' + language['code'] + ')'}}</option>
+                        {% else %}
+                            <option value="{{language['code']}}">{{language['language'] + '(' + language['code'] + ')'}}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+              </div>
+              <div class="col">
+                  <input type="submit" value="Submit">
+              </div>
+
+            </div>
         </form>
 
         {% if show %}
@@ -40,17 +47,20 @@
             <tbody>
                 
                 {% for key in pairStats['clean'].keys() %}
-                <tr>
-                    <td>{{key}}</td>
-                    <td>{{pairStats['base'][key]}}</td>
-                    <td>{{pairStats['clean'][key]}}</td>
-                </tr>
+                    {% if key == "total" %}
+                        <tr id="total">
+                            <td>{{key}}</td>
+                            <td>{{pairStats['base'][key]}}</td>
+                            <td>{{pairStats['clean'][key]}}</td>
+                        </tr>
+                    {% else %}
+                        <tr>
+                            <td><a href="{{ url_for('reference',source=key) }}">{{key}}</a></td>
+                            <td>{{pairStats['base'][key]}}</td>
+                            <td>{{pairStats['clean'][key]}}</td>
+                        </tr>
+                    {% endif %}
                 {% endfor %}
-                <!-- <tr>
-                    <td>Total</td>
-                    <td>{{pairStats['base_total']}}</td>
-                    <td>{{pairStats['clean_total']}}</td>
-                </tr> -->
             </tbody>
         </table>
 

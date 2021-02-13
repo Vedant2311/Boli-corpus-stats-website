@@ -66,7 +66,12 @@ def about():
 
 @app.route('/references')
 def references():
-    return render_template('references.html',references=data_stats['references'])
+    return render_template('references.html',references=data_stats['references'],source=None)
+
+@app.route('/references/<source>')
+def reference(source=None):
+    print(source)
+    return render_template('references.html',references=data_stats['references'],source=source)
 
 
 if __name__ == '__main__':

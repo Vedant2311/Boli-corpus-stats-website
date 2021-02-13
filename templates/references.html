@@ -4,38 +4,36 @@
 <div>
     <h3>References</h3>
 
-<ul>
     {% for key in references.keys() %}
-    <li>
-        {{references[key]['name']}}
-    </li>
+    <div class = "reference {{'highlight' if (source != None and (key == source)) }}" id='{{ key }}'>
+        {% if references[key]['type'] == "paper" %}
+        <span id="ref-name" > <i class="fas fa-book"></i><a href="{{ references[key]['paper-link'] }}"> {{references[key]['name']}}</a></span>
+        {% elif references[key]['type'] == "website" %}
+        <span id="ref-name" >  <i class="fas fa-info-circle"></i> <a href="{{ references[key]['link'] }}">{{references[key]['name']}}</a></span>
+        {% else %}
+        <span id="ref-name" ><i class="fas fa-info-circle"></i> <a href="{{ references[key]['link'] }}">{{references[key]['name']}}</a></span>
+        {% endif %}
+        <br>
+        <span id="ref-mla">{{references[key]['MLA']}}</span>
+        <br>
+        <hr>
+    </div>
     {% endfor %}
-</ul>
-    
-<!-- <h4> Datasets Used: </h4>
-
-<b>OPUS:</b> Collection of translated texts from the web. Sources like JW300, GNOME, and Ubuntu are present here. <br>
-<b>Opus-100:</b> English-Centric multilingual corpus including 100 languages. No preprocessing was needed here. <br>
-<b>JW300:</b> Corpus for 300 languages based on religious texts. Good quality. Preprocessing needed. <br>
-<b>OpenSubtitles:</b> Corresponds to translations for movie subtitles. Small sentences but good vocabulary. Preprocessing done. After the threshold preprocessing, the size got very less (used the value of 0.6 here). So the threshold values won't be used here. <br>
-<b>Wikimatrix:</b> Corresponds to the parallel corpora mined from Wikimedia by Facebook research. Not many Indian language pairs are present in it though.The data aligned with English is comparable in size to JW300. But for other inter-indic pairs, the amount of data is very less <br>
-<b>KDE4:</b> Parallel corpus of the KDE4 localization files. Contains decent amount of text in some Indic language pairs.  <br>
-<b>Tanzil:</b> Another corpus based on religious text. This one being specific to Quran translations. A lot of data between Hi, Ur, En. <br>
-<b>TED2020:</b> Crawl of 4000+ TED and TED-X transcripts from july2020. En based sentences were more <br>
-<b>CVIT PIB and MKB:</b> Corresponds to Mann Ki Baat radio translations and similar texts extracted from the Press Information Bureau sites. No preprocessing needed <br>
-<b>PMIndia corpus:</b> Parallel corpus in 13 Indian languages corresponding to PMI's news updates. Different from the CVIT corpora <br>
-<b>The IndoWordNet parallel corpus:</b> Consists of decent amount of parallel sentences across many Indian languages in our domain. In many cases, the example and gloss sentences are translations and thus this can be used as a dataset. Used in Hi-mr dataset in EMNLP'20 (check the below section) <br>
-
-<h4>Miscellaneous datasets:</h4>
-<b>WikiTitles en-ta and en-gu:</b> Downloaded from the data.statmt.org website.<br>
-<b>IITB En-Hi corpus:</b> Downloaded and extracted this in Scratch, HPC<br>
-<b>Asian Language Treebank:</b>Has 20K sentences translated corresponding to Hi, En, Bn through wikinews<br>
-<b>UFAL en-ta v2:</b> 160K train sentences between en-ta. Domains include Bible, cinema, and news <br>
-<b>Parallel Corpora on Mechanical Turk:</b> Consists of datasets for six Indian languages against English. Annotated via crowdsourcing<br>
-<b>EMNLP'20 Hi-Mr:</b> Downloaded the train, dev, and test from the site. The password is Slt@Wmt. Also added train text corresponding to PMI here so that we can use it for results produced by Lovish later. <br>
-<b>OdiEn corp v2:</b>Parallel corpus obtained between Or and En. Different ways incorporated to get the data, including using OCR based techniques + human correction.<br>
-<b>En-Ur Corpus Charles University:</b> Obtained from Religious texts -->
-
 
 </div>
+{% endblock %}
+
+{% block script %}
+
+{% if source != None %}
+<script>
+    var source = $("div.highlight")
+    source[0].scrollIntoView({
+            behavior: 'auto',
+            block: 'center',
+            inline: 'center'
+        });
+</script>
+{% endif %}
+
 {% endblock %}
