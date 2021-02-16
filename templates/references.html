@@ -7,7 +7,7 @@
     {% for key in references.keys() %}
     <div class = "reference {{'highlight' if (source != None and (key == source)) }}" id='{{ key }}'>
         {% if references[key]['type'] == "paper" %}
-        <span id="ref-name" > <i class="fas fa-book"></i><a href="{{ references[key]['paper-link'] }}"> {{references[key]['name']}}</a></span>
+        <span id="ref-name" > <i class="fas fa-book"></i><a href="{{ references[key]['paper_link'] }}"> {{references[key]['name']}}</a></span>
         {% elif references[key]['type'] == "website" %}
         <span id="ref-name" >  <i class="fas fa-info-circle"></i> <a href="{{ references[key]['link'] }}">{{references[key]['name']}}</a></span>
         {% else %}
